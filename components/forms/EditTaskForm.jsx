@@ -18,6 +18,20 @@ function EditTaskFrom({children, className , uid, payload}) {
 	const [category, setCategory] = useState(payload.category)
 	const [task, setTask] = useState(payload.task)
 
+	function handleInput(e){
+        switch(e.currentTarget.name){
+            case 'category':
+                setCategory(e.currentTarget.value)
+                break
+            case 'task':
+                setTask(e.currentTarget.value)
+                break
+            default:
+                null
+        }
+    }
+
+
 	if (state.message === 'success') {
 		toast(
 			<aside className="bg-green-500 text-lime-50 rounded-lg py-6 text-center">

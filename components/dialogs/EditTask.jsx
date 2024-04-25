@@ -13,7 +13,7 @@ function EditTask({children, className, uid, payload}) {
 	return (
 		<Dialog className="">
 			<DialogTrigger className="bg-black text-white w-full py-2.5 rounded-lg mt-3 font-semibold">
-				Edit New
+				Edit
 			</DialogTrigger>
 			<DialogContent className="">
 				<DialogHeader>
